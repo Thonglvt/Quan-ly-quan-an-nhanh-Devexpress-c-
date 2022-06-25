@@ -1,1 +1,1 @@
-# Quan-ly-quan-an-nhanh-Devexpress-c-
+# Quan-ly-quan-an-nhanh-Devexpress-c#
