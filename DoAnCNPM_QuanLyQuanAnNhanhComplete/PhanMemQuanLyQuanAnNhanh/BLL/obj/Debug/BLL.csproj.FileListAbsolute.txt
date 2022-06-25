@@ -9,3 +9,15 @@ E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.dll
 E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.pdb
 E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.dll
 E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\BLL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\BLL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.dll.config
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.pdb
