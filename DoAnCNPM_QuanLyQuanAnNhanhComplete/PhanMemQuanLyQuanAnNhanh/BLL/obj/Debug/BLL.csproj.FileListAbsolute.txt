@@ -1,0 +1,11 @@
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\BLL.dll
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\BLL.pdb
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.dll
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.pdb
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DTO.dll.config
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.dll
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\obj\Debug\BLL.pdb
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.dll
+E:\CNPM\DoAn\PhanMemQuanLyQuanAnNhanh\BLL\bin\Debug\DAL.pdb
