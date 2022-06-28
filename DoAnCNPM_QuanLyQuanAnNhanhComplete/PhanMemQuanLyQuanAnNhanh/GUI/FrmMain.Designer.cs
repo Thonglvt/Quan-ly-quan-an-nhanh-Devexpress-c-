@@ -384,6 +384,8 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageStore = global::GUI.Properties.Resources.bg2;
             this.ClientSize = new System.Drawing.Size(1324, 686);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);

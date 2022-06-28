@@ -1,0 +1,1 @@
+sqlcmd -E -S .\SQLExpress -i QL_QuanAnNhanh.sql

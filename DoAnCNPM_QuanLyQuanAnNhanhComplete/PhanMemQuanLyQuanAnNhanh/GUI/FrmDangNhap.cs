@@ -30,9 +30,9 @@ namespace GUI
             }   
             else
             {
-                txtUser.Text = "admin";
-                txtPass.Text = "Thong1234@";
-
+                txtUser.Text = "";
+                txtPass.Text = "";
+                txtUser.Focus();
             }
         }
         private void btnLogin_Click(object sender, EventArgs e)
