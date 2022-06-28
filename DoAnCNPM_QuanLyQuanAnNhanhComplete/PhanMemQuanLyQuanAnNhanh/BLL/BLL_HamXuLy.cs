@@ -100,7 +100,51 @@ namespace BLL
             //trong "X2" thành "x"
         }
 
+        //kiểm tra chuỗi s2 phải lớn hơn s1
+        //True s2 > s1
+        public static bool ktraNgay(String s1, String s2)
+        {
+            string[] date1 = s1.Split('/');
+            int nam1 = Convert.ToInt32(date1[2]);
+            int thang1 = Convert.ToInt32(date1[1]);
+            int ngay1 = Convert.ToInt32(date1[0]);
 
+            string[] date2 = s1.Split('/');
+            int nam2 = Convert.ToInt32(date2[2]);
+            int thang2 = Convert.ToInt32(date2[1]);
+            int ngay2 = Convert.ToInt32(date2[0]);
+
+            if (nam2 > nam1)
+            {
+                return true;
+            }
+            else if (nam2 < nam1)
+            {
+                return false;
+            }
+            else
+            {
+                if (thang2 > thang1)
+                {
+                    return true;
+                }
+                else if (thang2 < thang1)
+                {
+                    return false;
+                }
+                else
+                {
+                    if (ngay2 >= ngay1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
         public int GetDayNumber(int thang, int nam)
         {
             int dayNumber = 0;

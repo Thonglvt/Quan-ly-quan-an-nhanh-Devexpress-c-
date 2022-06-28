@@ -144,12 +144,7 @@ namespace GUI
                 deNgayBD.Focus();
                 return;
             }
-            if (string.Compare(Convert.ToDateTime(deNgayBD.EditValue).ToShortDateString(),DateTime.Now.ToShortDateString(),false)<0)
-            {
-                XtraMessageBox.Show("Vui lòng chọn ngày bắt đầu lớn hơn ngày "+ DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                deNgayBD.Focus();
-                return;
-            }
+            
             if (deNgayKT.EditValue == null)
             {
                 XtraMessageBox.Show("Vui lòng chọn " + lbNgayKT.Text, "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -162,6 +157,21 @@ namespace GUI
                 deNgayKT.Focus();
                 return;
             }
+            string s1 = Convert.ToDateTime(deNgayBD.EditValue).ToShortDateString();
+            string s2 = DateTime.Now.ToShortDateString();
+            bool ktra = BLL_HamXuLy.ktraNgay(s1, s2);
+            if (BLL_HamXuLy.ktraNgay(s1,s2)==false)
+            {
+                XtraMessageBox.Show("Vui lòng chọn ngày bắt đầu lớn hơn ngày " + DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                deNgayBD.Focus();
+                return;
+            }
+            //if (Convert.ToDateTime(deNgayBD.EditValue)<DateTime.Now)
+            //{
+            //    XtraMessageBox.Show("Vui lòng chọn ngày bắt đầu lớn hơn ngày " + DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    deNgayBD.Focus();
+            //    return;
+            //}
             //Check ngày bắt đầu KM đang trong thời gian KM
             bllKM = new BLL_KhuyenMai();
             var check = bllKM.getAll().FirstOrDefault(t => t.NgayBatDau <= Convert.ToDateTime(deNgayBD.EditValue) 

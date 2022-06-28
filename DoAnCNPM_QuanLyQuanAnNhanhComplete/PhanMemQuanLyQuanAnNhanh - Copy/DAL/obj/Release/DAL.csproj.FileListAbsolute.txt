@@ -1,0 +1,10 @@
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\bin\Release\DAL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\bin\Release\DAL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\bin\Release\DTO.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\bin\Release\DTO.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\bin\Release\DTO.dll.config
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\obj\Release\DAL.csproj.CopyComplete
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\obj\Release\DAL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\obj\Release\DAL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\DAL\obj\Release\DAL.csproj.AssemblyReference.cache

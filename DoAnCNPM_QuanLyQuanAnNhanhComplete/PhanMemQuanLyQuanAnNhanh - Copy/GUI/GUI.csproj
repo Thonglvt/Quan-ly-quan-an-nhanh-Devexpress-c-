@@ -1,0 +1,709 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{277D44B1-76E9-451F-80A3-FE8F32D3AADC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>09DF5D0B227C335F8C047E65CA95E49B1EEADF52</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DTO">
+      <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBangGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBangGia.Designer.cs">
+      <DependentUpon>FrmBangGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCaLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaLamViec.Designer.cs">
+      <DependentUpon>FrmCaLamViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCauHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCauHinh.Designer.cs">
+      <DependentUpon>FrmCauHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChamCong.Designer.cs">
+      <DependentUpon>FrmChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChiTietCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChiTietCong.Designer.cs">
+      <DependentUpon>FrmChiTietCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialogDoiPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialogDoiPass.Designer.cs">
+      <DependentUpon>FrmDialogDoiPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialogSoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialogSoLuong.Designer.cs">
+      <DependentUpon>FrmDialogSoLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialogThemTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialogThemTK.Designer.cs">
+      <DependentUpon>FrmDialogThemTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialogThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialogThongTinCaNhan.Designer.cs">
+      <DependentUpon>FrmDialogThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSDangKyCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSDangKyCa.Designer.cs">
+      <DependentUpon>FrmDSDangKyCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoaDonBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoaDonBanHang.Designer.cs">
+      <DependentUpon>FrmHoaDonBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhuyenMai.Designer.cs">
+      <DependentUpon>FrmKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLapHoaDon.Designer.cs">
+      <DependentUpon>FrmLapHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNguoiDung.Designer.cs">
+      <DependentUpon>FrmNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhomNguoiDung.Designer.cs">
+      <DependentUpon>FrmNhomNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhanQuyen.Designer.cs">
+      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.Designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXacNhanPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXacNhanPass.Designer.cs">
+      <DependentUpon>FrmXacNhanPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBangGia.resx">
+      <DependentUpon>FrmBangGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaLamViec.resx">
+      <DependentUpon>FrmCaLamViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCauHinh.resx">
+      <DependentUpon>FrmCauHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChamCong.resx">
+      <DependentUpon>FrmChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChiTietCong.resx">
+      <DependentUpon>FrmChiTietCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialogDoiPass.resx">
+      <DependentUpon>FrmDialogDoiPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialogSoLuong.resx">
+      <DependentUpon>FrmDialogSoLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialogThemTK.resx">
+      <DependentUpon>FrmDialogThemTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialogThongTinCaNhan.resx">
+      <DependentUpon>FrmDialogThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSDangKyCa.resx">
+      <DependentUpon>FrmDSDangKyCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoaDonBanHang.resx">
+      <DependentUpon>FrmHoaDonBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhuyenMai.resx">
+      <DependentUpon>FrmKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLapHoaDon.resx">
+      <DependentUpon>FrmLapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNguoiDung.resx">
+      <DependentUpon>FrmNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhomNguoiDung.resx">
+      <DependentUpon>FrmNhomNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhanQuyen.resx">
+      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXacNhanPass.resx">
+      <DependentUpon>FrmXacNhanPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="GUI_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertgroupheader.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_creditcard.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thucdon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thucdon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_reload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product_group.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouser_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosale_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosale_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle-icons-power.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3rau - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3rau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodetails_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodetails_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorder_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorder_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocontact2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocontact2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boperson_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boperson_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridcolumnheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gridcolumnheader_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unmergecells_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unmergecells_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success2 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentrefund5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save as.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorlegend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorlegend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveto_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background3rau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgDN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_appearance.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcolumn.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selecttable.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\today_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\today_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled10.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -418,7 +418,6 @@ E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhCompl
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
-E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.exe.manifest
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.application
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.csproj.CopyComplete
@@ -429,3 +428,4 @@ E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhCompl
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.FrmChamCong.resources
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.FrmChiTietCong.resources
 E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.FrmDSDangKyCa.resources
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
