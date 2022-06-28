@@ -168,6 +168,12 @@ namespace GUI
             // 
             // bar1
             // 
+            this.bar1.BarAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.bar1.BarAppearance.Hovered.Options.UseFont = true;
+            this.bar1.BarAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.bar1.BarAppearance.Normal.Options.UseFont = true;
+            this.bar1.BarAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.bar1.BarAppearance.Pressed.Options.UseFont = true;
             this.bar1.BarName = "Main menu";
             this.bar1.DockCol = 0;
             this.bar1.DockRow = 0;

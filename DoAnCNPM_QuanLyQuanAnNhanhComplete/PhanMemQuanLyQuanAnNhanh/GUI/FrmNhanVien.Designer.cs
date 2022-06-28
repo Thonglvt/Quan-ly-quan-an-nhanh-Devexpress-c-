@@ -36,6 +36,7 @@ namespace GUI
             this.btnSuaNV = new DevExpress.XtraBars.BarButtonItem();
             this.btnLuuNV = new DevExpress.XtraBars.BarButtonItem();
             this.btnRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -142,9 +143,10 @@ namespace GUI
             this.btnThemNV,
             this.btnLuuNV,
             this.btnSuaNV,
-            this.btnRefresh});
+            this.btnRefresh,
+            this.btnDong});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 8;
+            this.barManager1.MaxItemId = 9;
             // 
             // bar2
             // 
@@ -162,7 +164,8 @@ namespace GUI
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThemNV, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnSuaNV, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnLuuNV, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRefresh)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRefresh),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDong)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
@@ -204,6 +207,15 @@ namespace GUI
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRefresh_ItemClick);
+            // 
+            // btnDong
+            // 
+            this.btnDong.Caption = "Đóng";
+            this.btnDong.Id = 8;
+            this.btnDong.ImageOptions.SvgImage = global::GUI.Properties.Resources.actions_deletecircled10;
+            this.btnDong.Name = "btnDong";
+            this.btnDong.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnDong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDong_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -270,7 +282,7 @@ namespace GUI
             this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup3.GroupBordersVisible = false;
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(361, 28);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(289, 28);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControl1
@@ -287,7 +299,7 @@ namespace GUI
             this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(361, 38);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(289, 38);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // radioGroupGT
@@ -736,7 +748,7 @@ namespace GUI
             this.colTK.AppearanceHeader.Options.UseTextOptions = true;
             this.colTK.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colTK.Caption = "TÀI KHOẢN";
-            this.colTK.FieldName = "TaiKhoan";
+            this.colTK.FieldName = "username";
             this.colTK.MinWidth = 25;
             this.colTK.Name = "colTK";
             this.colTK.OptionsColumn.AllowEdit = false;
@@ -757,8 +769,6 @@ namespace GUI
             this.colMK.MinWidth = 25;
             this.colMK.Name = "colMK";
             this.colMK.OptionsColumn.AllowEdit = false;
-            this.colMK.Visible = true;
-            this.colMK.VisibleIndex = 9;
             this.colMK.Width = 97;
             // 
             // colTT
@@ -776,7 +786,7 @@ namespace GUI
             this.colTT.MinWidth = 25;
             this.colTT.Name = "colTT";
             this.colTT.Visible = true;
-            this.colTT.VisibleIndex = 10;
+            this.colTT.VisibleIndex = 9;
             this.colTT.Width = 97;
             // 
             // colSave
@@ -792,7 +802,7 @@ namespace GUI
             this.colSave.MinWidth = 25;
             this.colSave.Name = "colSave";
             this.colSave.Visible = true;
-            this.colSave.VisibleIndex = 11;
+            this.colSave.VisibleIndex = 10;
             this.colSave.Width = 63;
             // 
             // btnLuuGV
@@ -819,7 +829,7 @@ namespace GUI
             this.colDelete.MinWidth = 25;
             this.colDelete.Name = "colDelete";
             this.colDelete.Visible = true;
-            this.colDelete.VisibleIndex = 12;
+            this.colDelete.VisibleIndex = 11;
             this.colDelete.Width = 50;
             // 
             // btnXoaOnGV
@@ -982,5 +992,6 @@ namespace GUI
         private DevExpress.XtraLayout.LayoutControl layoutControl2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraBars.BarButtonItem btnDong;
     }
 }

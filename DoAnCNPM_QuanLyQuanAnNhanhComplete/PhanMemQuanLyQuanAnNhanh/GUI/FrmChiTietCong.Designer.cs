@@ -38,8 +38,8 @@ namespace GUI
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.btnLuuTop = new DevExpress.XtraBars.BarButtonItem();
             this.btnXuatExcel = new DevExpress.XtraBars.BarButtonItem();
-            this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnToday = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -204,6 +204,12 @@ namespace GUI
             // 
             // bar1
             // 
+            this.bar1.BarAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.bar1.BarAppearance.Hovered.Options.UseFont = true;
+            this.bar1.BarAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.bar1.BarAppearance.Normal.Options.UseFont = true;
+            this.bar1.BarAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.bar1.BarAppearance.Pressed.Options.UseFont = true;
             this.bar1.BarName = "Main menu";
             this.bar1.DockCol = 0;
             this.bar1.DockRow = 0;
@@ -212,8 +218,8 @@ namespace GUI
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnLuuTop, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXuatExcel),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnLamMoi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnToday),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnLamMoi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDong)});
             this.bar1.OptionsBar.MultiLine = true;
             this.bar1.OptionsBar.UseWholeRow = true;
@@ -233,25 +239,30 @@ namespace GUI
             // 
             this.btnXuatExcel.Caption = "Xuất Excel";
             this.btnXuatExcel.Id = 0;
+            this.btnXuatExcel.ImageOptions.Image = global::GUI.Properties.Resources.exporttoxls_16x16;
+            this.btnXuatExcel.ImageOptions.LargeImage = global::GUI.Properties.Resources.exporttoxls_32x32;
             this.btnXuatExcel.Name = "btnXuatExcel";
             this.btnXuatExcel.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnXuatExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnIn_ItemClick_1);
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Caption = "Refresh";
-            this.btnLamMoi.Id = 5;
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnLamMoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLamMoi_ItemClick);
             // 
             // btnToday
             // 
             this.btnToday.Caption = "Today";
             this.btnToday.Id = 10;
+            this.btnToday.ImageOptions.Image = global::GUI.Properties.Resources.today_16x16;
+            this.btnToday.ImageOptions.LargeImage = global::GUI.Properties.Resources.today_32x32;
             this.btnToday.Name = "btnToday";
             this.btnToday.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnToday.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnToday_ItemClick);
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Caption = "Refresh";
+            this.btnLamMoi.Id = 5;
+            this.btnLamMoi.ImageOptions.SvgImage = global::GUI.Properties.Resources.changeview5;
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnLamMoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLamMoi_ItemClick);
             // 
             // btnDong
             // 
@@ -306,16 +317,16 @@ namespace GUI
             this.lcTop.Location = new System.Drawing.Point(0, 30);
             this.lcTop.Name = "lcTop";
             this.lcTop.Root = this.Root;
-            this.lcTop.Size = new System.Drawing.Size(1271, 144);
+            this.lcTop.Size = new System.Drawing.Size(1271, 157);
             this.lcTop.TabIndex = 18;
             this.lcTop.Text = "layoutControl1";
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Location = new System.Drawing.Point(569, 82);
+            this.layoutControl1.Location = new System.Drawing.Point(579, 82);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup2;
-            this.layoutControl1.Size = new System.Drawing.Size(189, 42);
+            this.layoutControl1.Size = new System.Drawing.Size(192, 51);
             this.layoutControl1.TabIndex = 11;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -324,12 +335,12 @@ namespace GUI
             this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(189, 42);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(192, 51);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // checkChonCa
             // 
-            this.checkChonCa.Location = new System.Drawing.Point(672, 50);
+            this.checkChonCa.Location = new System.Drawing.Point(683, 50);
             this.checkChonCa.MenuManager = this.barManager1;
             this.checkChonCa.Name = "checkChonCa";
             this.checkChonCa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -337,17 +348,17 @@ namespace GUI
             this.checkChonCa.Properties.Appearance.Options.UseFont = true;
             this.checkChonCa.Properties.Appearance.Options.UseForeColor = true;
             this.checkChonCa.Properties.Caption = "Theo ca";
-            this.checkChonCa.Size = new System.Drawing.Size(86, 25);
+            this.checkChonCa.Size = new System.Drawing.Size(88, 25);
             this.checkChonCa.StyleController = this.lcTop;
             this.checkChonCa.TabIndex = 10;
             this.checkChonCa.CheckedChanged += new System.EventHandler(this.checkChonCa_CheckedChanged);
             // 
             // layoutControl2
             // 
-            this.layoutControl2.Location = new System.Drawing.Point(774, 12);
+            this.layoutControl2.Location = new System.Drawing.Point(787, 12);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup3;
-            this.layoutControl2.Size = new System.Drawing.Size(464, 124);
+            this.layoutControl2.Size = new System.Drawing.Size(472, 133);
             this.layoutControl2.TabIndex = 8;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -356,7 +367,7 @@ namespace GUI
             this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup3.GroupBordersVisible = false;
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(464, 124);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(472, 133);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // sleCaLV
@@ -370,7 +381,7 @@ namespace GUI
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sleCaLV.Properties.NullText = "Chọn ca làm việc";
             this.sleCaLV.Properties.PopupView = this.sleCaLV_View;
-            this.sleCaLV.Size = new System.Drawing.Size(556, 28);
+            this.sleCaLV.Size = new System.Drawing.Size(567, 28);
             this.sleCaLV.StyleController = this.lcTop;
             this.sleCaLV.TabIndex = 7;
             this.sleCaLV.EditValueChanged += new System.EventHandler(this.sleCaLV_EditValueChanged);
@@ -474,7 +485,7 @@ namespace GUI
             // 
             // sleNam
             // 
-            this.sleNam.Location = new System.Drawing.Point(353, 91);
+            this.sleNam.Location = new System.Drawing.Point(357, 91);
             this.sleNam.MenuManager = this.barManager1;
             this.sleNam.Name = "sleNam";
             this.sleNam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
@@ -484,7 +495,7 @@ namespace GUI
             this.sleNam.Properties.NullText = "Chọn năm";
             this.sleNam.Properties.PopupFormSize = new System.Drawing.Size(120, 0);
             this.sleNam.Properties.PopupView = this.sleNam_View;
-            this.sleNam.Size = new System.Drawing.Size(203, 24);
+            this.sleNam.Size = new System.Drawing.Size(209, 24);
             this.sleNam.StyleController = this.lcTop;
             this.sleNam.TabIndex = 5;
             this.sleNam.EditValueChanged += new System.EventHandler(this.sleNam_EditValueChanged);
@@ -529,7 +540,7 @@ namespace GUI
             this.sleThang.Properties.NullText = "Chọn tháng";
             this.sleThang.Properties.PopupFormSize = new System.Drawing.Size(100, 0);
             this.sleThang.Properties.PopupView = this.sleThang_View;
-            this.sleThang.Size = new System.Drawing.Size(122, 24);
+            this.sleThang.Size = new System.Drawing.Size(126, 24);
             this.sleThang.StyleController = this.lcTop;
             this.sleThang.TabIndex = 4;
             this.sleThang.EditValueChanged += new System.EventHandler(this.sleThang_EditValueChanged);
@@ -569,15 +580,15 @@ namespace GUI
             this.layoutControlItem4,
             this.layoutControlGroupLocDL});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1250, 148);
+            this.Root.Size = new System.Drawing.Size(1271, 157);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.layoutControl2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(762, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(775, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(468, 128);
+            this.layoutControlItem4.Size = new System.Drawing.Size(476, 137);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -593,7 +604,7 @@ namespace GUI
             this.layoutControlItem2});
             this.layoutControlGroupLocDL.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupLocDL.Name = "layoutControlGroupLocDL";
-            this.layoutControlGroupLocDL.Size = new System.Drawing.Size(762, 128);
+            this.layoutControlGroupLocDL.Size = new System.Drawing.Size(775, 137);
             this.layoutControlGroupLocDL.Text = "Lọc dữ liệu";
             // 
             // lbCLV
@@ -603,7 +614,7 @@ namespace GUI
             this.lbCLV.Control = this.sleCaLV;
             this.lbCLV.Location = new System.Drawing.Point(0, 0);
             this.lbCLV.Name = "lbCLV";
-            this.lbCLV.Size = new System.Drawing.Size(648, 32);
+            this.lbCLV.Size = new System.Drawing.Size(659, 32);
             this.lbCLV.Text = "Ca làm việc";
             this.lbCLV.TextSize = new System.Drawing.Size(85, 21);
             // 
@@ -615,7 +626,7 @@ namespace GUI
             this.lbThang.Location = new System.Drawing.Point(0, 32);
             this.lbThang.Name = "lbThang";
             this.lbThang.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.lbThang.Size = new System.Drawing.Size(232, 46);
+            this.lbThang.Size = new System.Drawing.Size(236, 55);
             this.lbThang.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.lbThang.Text = "Tháng";
             this.lbThang.TextSize = new System.Drawing.Size(85, 18);
@@ -625,10 +636,10 @@ namespace GUI
             this.lbNam.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F);
             this.lbNam.AppearanceItemCaption.Options.UseFont = true;
             this.lbNam.Control = this.sleNam;
-            this.lbNam.Location = new System.Drawing.Point(232, 32);
+            this.lbNam.Location = new System.Drawing.Point(236, 32);
             this.lbNam.Name = "lbNam";
             this.lbNam.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.lbNam.Size = new System.Drawing.Size(313, 46);
+            this.lbNam.Size = new System.Drawing.Size(319, 55);
             this.lbNam.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.lbNam.Text = "Năm";
             this.lbNam.TextSize = new System.Drawing.Size(85, 18);
@@ -636,18 +647,18 @@ namespace GUI
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.checkChonCa;
-            this.layoutControlItem3.Location = new System.Drawing.Point(648, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(659, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(90, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(92, 32);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.layoutControl1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(545, 32);
+            this.layoutControlItem2.Location = new System.Drawing.Point(555, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(193, 46);
+            this.layoutControlItem2.Size = new System.Drawing.Size(196, 55);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -656,18 +667,18 @@ namespace GUI
             this.lcBottom.Controls.Add(this.xtraScrollableControl1);
             this.lcBottom.Controls.Add(this.gcCTCC);
             this.lcBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lcBottom.Location = new System.Drawing.Point(0, 174);
+            this.lcBottom.Location = new System.Drawing.Point(0, 187);
             this.lcBottom.Name = "lcBottom";
             this.lcBottom.Root = this.layoutControlGroup1;
-            this.lcBottom.Size = new System.Drawing.Size(1271, 577);
+            this.lcBottom.Size = new System.Drawing.Size(1271, 564);
             this.lcBottom.TabIndex = 19;
             this.lcBottom.Text = "layoutControl1";
             // 
             // xtraScrollableControl1
             // 
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(12, 545);
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(12, 533);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(1247, 20);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(1247, 19);
             this.xtraScrollableControl1.TabIndex = 5;
             // 
             // gcCTCC
@@ -677,7 +688,7 @@ namespace GUI
             this.gcCTCC.MainView = this.gvCTCC_View;
             this.gcCTCC.MenuManager = this.barManager1;
             this.gcCTCC.Name = "gcCTCC";
-            this.gcCTCC.Size = new System.Drawing.Size(1223, 479);
+            this.gcCTCC.Size = new System.Drawing.Size(1223, 467);
             this.gcCTCC.TabIndex = 4;
             this.gcCTCC.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvCTCC_View});
@@ -1449,7 +1460,7 @@ namespace GUI
             this.layoutControlGroupChamCong,
             this.layoutControlItem5});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1271, 577);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1271, 564);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroupChamCong
@@ -1460,7 +1471,7 @@ namespace GUI
             this.layoutControlItem1});
             this.layoutControlGroupChamCong.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupChamCong.Name = "layoutControlGroupChamCong";
-            this.layoutControlGroupChamCong.Size = new System.Drawing.Size(1251, 533);
+            this.layoutControlGroupChamCong.Size = new System.Drawing.Size(1251, 521);
             this.layoutControlGroupChamCong.Text = "Danh sách chấm công";
             // 
             // layoutControlItem1
@@ -1468,16 +1479,16 @@ namespace GUI
             this.layoutControlItem1.Control = this.gcCTCC;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1227, 483);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1227, 471);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.xtraScrollableControl1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 533);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 521);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(1251, 24);
+            this.layoutControlItem5.Size = new System.Drawing.Size(1251, 23);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 

@@ -30,7 +30,7 @@ namespace GUI
         private void FrmDialogSoLuong_Load(object sender, EventArgs e)
         {
             txtTenSP.Text = bgSP.TenSP;
-            txtGiaBan.Text = bgSP.Gia.ToString();
+            txtGiaBan.Text = string.Format("{0:0,0 đ}",bgSP.Gia);
             
         }
 
