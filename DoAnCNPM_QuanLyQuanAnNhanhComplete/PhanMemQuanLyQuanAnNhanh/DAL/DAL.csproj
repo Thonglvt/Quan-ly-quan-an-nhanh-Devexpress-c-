@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL_Menu.cs" />
+    <Compile Include="DAL_CaLamViec.cs" />
+    <Compile Include="DAL_ChamCong.cs" />
+    <Compile Include="DAL_ChiTietChamCong.cs" />
+    <Compile Include="DAL_DangKyCa.cs" />
     <Compile Include="DAL_NhomNguoiDung.cs" />
     <Compile Include="DAL_AutoCreateID.cs" />
     <Compile Include="DAL_BangGia.cs" />

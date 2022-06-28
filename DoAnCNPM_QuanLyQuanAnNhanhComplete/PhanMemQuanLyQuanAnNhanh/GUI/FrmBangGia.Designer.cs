@@ -30,6 +30,7 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBangGia));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
@@ -736,6 +737,7 @@ namespace GUI
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FrmBangGia.IconOptions.Image")));
             this.Name = "FrmBangGia";
             this.Padding = new System.Windows.Forms.Padding(50, 20, 50, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -31,7 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DAL">
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
     </Reference>
     <Reference Include="DTO">
@@ -48,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_CaLamViec.cs" />
+    <Compile Include="BLL_ChamCong.cs" />
+    <Compile Include="BLL_ChiTietChamCong.cs" />
+    <Compile Include="BLL_DangKyCa.cs" />
     <Compile Include="BLL_NhomNguoiDung.cs" />
     <Compile Include="BLL_AutoCreateID.cs" />
     <Compile Include="BLL_BangGia.cs" />

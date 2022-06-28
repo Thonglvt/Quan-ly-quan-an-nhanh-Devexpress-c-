@@ -32,6 +32,8 @@ namespace GUI
             {
                 txtUser.Text = "";
                 txtPass.Text = "";
+                //txtUser.Text = "admin";
+                //txtPass.Text = "Thong1234@";
                 txtUser.Focus();
             }
         }
@@ -108,6 +110,11 @@ namespace GUI
         {
             FrmCauHinh frm = new FrmCauHinh();
             frm.Show();
+        }
+
+        private void FrmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

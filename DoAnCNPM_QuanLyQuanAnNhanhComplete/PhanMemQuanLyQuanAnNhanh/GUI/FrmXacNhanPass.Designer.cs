@@ -31,28 +31,28 @@ namespace GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmXacNhanPass));
             this.lcMain = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.btnDong = new DevExpress.XtraEditors.SimpleButton();
+            this.btnConfirm = new DevExpress.XtraEditors.SimpleButton();
             this.txtPass = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.btnConfirm = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             ((System.ComponentModel.ISupportInitialize)(this.lcMain)).BeginInit();
             this.lcMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             this.SuspendLayout();
             // 
             // lcMain
@@ -69,6 +69,62 @@ namespace GUI
             this.lcMain.TabIndex = 0;
             this.lcMain.Text = "layoutControl1";
             // 
+            // layoutControl1
+            // 
+            this.layoutControl1.Location = new System.Drawing.Point(12, 54);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.layoutControlGroup1;
+            this.layoutControl1.Size = new System.Drawing.Size(217, 54);
+            this.layoutControl1.TabIndex = 7;
+            this.layoutControl1.Text = "layoutControl1";
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(217, 54);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // btnDong
+            // 
+            this.btnDong.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnDong.Appearance.Options.UseFont = true;
+            this.btnDong.ImageOptions.SvgImage = global::GUI.Properties.Resources.actions_deletecircled7;
+            this.btnDong.Location = new System.Drawing.Point(380, 59);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btnDong.Size = new System.Drawing.Size(103, 44);
+            this.btnDong.StyleController = this.lcMain;
+            this.btnDong.TabIndex = 6;
+            this.btnDong.Text = "Thoát";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnConfirm.Appearance.Options.UseFont = true;
+            this.btnConfirm.ImageOptions.SvgImage = global::GUI.Properties.Resources.checkbox3;
+            this.btnConfirm.Location = new System.Drawing.Point(238, 59);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btnConfirm.Size = new System.Drawing.Size(128, 44);
+            this.btnConfirm.StyleController = this.lcMain;
+            this.btnConfirm.TabIndex = 5;
+            this.btnConfirm.Text = "Xác nhận";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(88, 17);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtPass.Properties.Appearance.Options.UseFont = true;
+            this.txtPass.Properties.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(395, 28);
+            this.txtPass.StyleController = this.lcMain;
+            this.txtPass.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -82,17 +138,6 @@ namespace GUI
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(500, 133);
             this.Root.TextVisible = false;
-            // 
-            // txtPass
-            // 
-            this.txtPass.Location = new System.Drawing.Point(97, 17);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtPass.Properties.Appearance.Options.UseFont = true;
-            this.txtPass.Properties.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(386, 28);
-            this.txtPass.StyleController = this.lcMain;
-            this.txtPass.TabIndex = 4;
             // 
             // layoutControlItem1
             // 
@@ -114,20 +159,6 @@ namespace GUI
             this.emptySpaceItem1.Size = new System.Drawing.Size(480, 13);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.btnConfirm.Appearance.Options.UseFont = true;
-            this.btnConfirm.ImageOptions.SvgImage = global::GUI.Properties.Resources.checkbox3;
-            this.btnConfirm.Location = new System.Drawing.Point(238, 59);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btnConfirm.Size = new System.Drawing.Size(128, 44);
-            this.btnConfirm.StyleController = this.lcMain;
-            this.btnConfirm.TabIndex = 5;
-            this.btnConfirm.Text = "Xác nhận";
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -139,20 +170,6 @@ namespace GUI
             this.layoutControlItem2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // btnDong
-            // 
-            this.btnDong.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.btnDong.Appearance.Options.UseFont = true;
-            this.btnDong.ImageOptions.SvgImage = global::GUI.Properties.Resources.actions_deletecircled7;
-            this.btnDong.Location = new System.Drawing.Point(380, 59);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btnDong.Size = new System.Drawing.Size(103, 44);
-            this.btnDong.StyleController = this.lcMain;
-            this.btnDong.TabIndex = 6;
-            this.btnDong.Text = "Thoát";
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // layoutControlItem3
             // 
@@ -166,15 +183,6 @@ namespace GUI
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Location = new System.Drawing.Point(12, 54);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(217, 54);
-            this.layoutControl1.TabIndex = 7;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.layoutControl1;
@@ -183,14 +191,6 @@ namespace GUI
             this.layoutControlItem4.Size = new System.Drawing.Size(221, 58);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(217, 54);
-            this.layoutControlGroup1.TextVisible = false;
             // 
             // FrmXacNhanPass
             // 
@@ -204,15 +204,15 @@ namespace GUI
             this.Text = "Vì lý do bảo mật vui lòng nhập lại mật khẩu";
             ((System.ComponentModel.ISupportInitialize)(this.lcMain)).EndInit();
             this.lcMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             this.ResumeLayout(false);
 
         }

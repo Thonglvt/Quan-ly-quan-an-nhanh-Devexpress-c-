@@ -16,6 +16,7 @@ namespace DAL
             db = new QL_QuanAnNhanhDataContext();
             return db.tblNhanViens.ToList();
         }
+
         public string insert(tblNhanVien pSP)
         {
             try
@@ -68,6 +69,21 @@ namespace DAL
                     return "1";
                 }
                 return "0";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        public string deleteNV(string pMaNV)
+        {
+            try
+            {
+                db = new QL_QuanAnNhanhDataContext();
+                tblNhanVien nv = db.tblNhanViens.FirstOrDefault(n => n.MaNV == pMaNV);
+                db.tblNhanViens.DeleteOnSubmit(nv);
+                db.SubmitChanges();
+                return "1";
             }
             catch (Exception ex)
             {

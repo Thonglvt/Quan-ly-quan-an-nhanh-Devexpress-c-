@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHoaDonBanHang));
             this.gcHoaDon = new DevExpress.XtraGrid.GridControl();
             this.gvHD = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMaHD = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -953,8 +954,11 @@ namespace GUI
             this.ClientSize = new System.Drawing.Size(1302, 745);
             this.Controls.Add(this.lcBottom);
             this.Controls.Add(this.lcTop);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FrmHoaDonBanHang.IconOptions.Image")));
             this.Name = "FrmHoaDonBanHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÍ HÓA ĐƠN BÁN HÀNG";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmHoaDonBH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gcHoaDon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvHD)).EndInit();

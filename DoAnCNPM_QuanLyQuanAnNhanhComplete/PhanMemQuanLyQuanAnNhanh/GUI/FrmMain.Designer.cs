@@ -250,6 +250,7 @@ namespace GUI
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNhanVien_ItemClick);
             // 
             // btnCaLV
             // 
@@ -260,6 +261,7 @@ namespace GUI
             this.btnCaLV.Name = "btnCaLV";
             this.btnCaLV.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnCaLV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCaLV_ItemClick);
             // 
             // btnChamCong
             // 
@@ -268,9 +270,9 @@ namespace GUI
             this.btnChamCong.ImageOptions.Image = global::GUI.Properties.Resources.unmergecells_16x16;
             this.btnChamCong.ImageOptions.LargeImage = global::GUI.Properties.Resources.unmergecells_32x32;
             this.btnChamCong.Name = "btnChamCong";
-            this.btnChamCong.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnChamCong.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnChamCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChamCong_ItemClick);
             // 
             // lbThongTinNhanVien
             // 

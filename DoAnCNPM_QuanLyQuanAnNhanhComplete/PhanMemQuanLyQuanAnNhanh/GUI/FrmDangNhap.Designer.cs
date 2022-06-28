@@ -79,7 +79,7 @@ namespace GUI
             this.lcMain.Location = new System.Drawing.Point(0, 30);
             this.lcMain.Name = "lcMain";
             this.lcMain.Root = this.Root;
-            this.lcMain.Size = new System.Drawing.Size(596, 213);
+            this.lcMain.Size = new System.Drawing.Size(616, 231);
             this.lcMain.TabIndex = 0;
             this.lcMain.Text = "layoutControl1";
             // 
@@ -88,7 +88,7 @@ namespace GUI
             this.layoutControl1.Location = new System.Drawing.Point(24, 134);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(321, 55);
+            this.layoutControl1.Size = new System.Drawing.Size(333, 73);
             this.layoutControl1.TabIndex = 8;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -97,7 +97,7 @@ namespace GUI
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(321, 55);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(333, 73);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // btnDong
@@ -105,9 +105,9 @@ namespace GUI
             this.btnDong.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnDong.Appearance.Options.UseFont = true;
             this.btnDong.ImageOptions.SvgImage = global::GUI.Properties.Resources.actions_deletecircled3;
-            this.btnDong.Location = new System.Drawing.Point(480, 139);
+            this.btnDong.Location = new System.Drawing.Point(496, 139);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(87, 44);
+            this.btnDong.Size = new System.Drawing.Size(91, 44);
             this.btnDong.StyleController = this.lcMain;
             this.btnDong.TabIndex = 4;
             this.btnDong.Text = "Exit";
@@ -118,9 +118,9 @@ namespace GUI
             this.btnLogin.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnLogin.Appearance.Options.UseFont = true;
             this.btnLogin.ImageOptions.SvgImage = global::GUI.Properties.Resources.nextview;
-            this.btnLogin.Location = new System.Drawing.Point(354, 139);
+            this.btnLogin.Location = new System.Drawing.Point(366, 139);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(112, 44);
+            this.btnLogin.Size = new System.Drawing.Size(116, 44);
             this.btnLogin.StyleController = this.lcMain;
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
@@ -133,7 +133,7 @@ namespace GUI
             this.txtPass.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtPass.Properties.Appearance.Options.UseFont = true;
             this.txtPass.Properties.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(301, 28);
+            this.txtPass.Size = new System.Drawing.Size(321, 28);
             this.txtPass.StyleController = this.lcMain;
             this.txtPass.TabIndex = 2;
             // 
@@ -143,7 +143,7 @@ namespace GUI
             this.txtUser.Name = "txtUser";
             this.txtUser.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtUser.Properties.Appearance.Options.UseFont = true;
-            this.txtUser.Size = new System.Drawing.Size(301, 28);
+            this.txtUser.Size = new System.Drawing.Size(321, 28);
             this.txtUser.StyleController = this.lcMain;
             this.txtUser.TabIndex = 1;
             // 
@@ -154,7 +154,7 @@ namespace GUI
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(596, 213);
+            this.Root.Size = new System.Drawing.Size(616, 231);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -168,7 +168,7 @@ namespace GUI
             this.layoutControlItem5});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(576, 193);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(596, 211);
             this.layoutControlGroup2.Text = "Thông tin đăng nhập";
             // 
             // lbTenDN
@@ -178,7 +178,7 @@ namespace GUI
             this.lbTenDN.Control = this.txtUser;
             this.lbTenDN.Location = new System.Drawing.Point(0, 0);
             this.lbTenDN.Name = "lbTenDN";
-            this.lbTenDN.Size = new System.Drawing.Size(552, 42);
+            this.lbTenDN.Size = new System.Drawing.Size(572, 42);
             this.lbTenDN.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.lbTenDN.Text = "Tên đăng nhập [Username]";
             this.lbTenDN.TextSize = new System.Drawing.Size(234, 21);
@@ -190,7 +190,7 @@ namespace GUI
             this.layoutControlItem2.Control = this.txtPass;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 42);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(552, 42);
+            this.layoutControlItem2.Size = new System.Drawing.Size(572, 42);
             this.layoutControlItem2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem2.Text = "Mật khẩu [Password]";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(234, 21);
@@ -198,9 +198,9 @@ namespace GUI
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnLogin;
-            this.layoutControlItem3.Location = new System.Drawing.Point(325, 84);
+            this.layoutControlItem3.Location = new System.Drawing.Point(337, 84);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(126, 59);
+            this.layoutControlItem3.Size = new System.Drawing.Size(130, 77);
             this.layoutControlItem3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
@@ -208,9 +208,9 @@ namespace GUI
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnDong;
-            this.layoutControlItem4.Location = new System.Drawing.Point(451, 84);
+            this.layoutControlItem4.Location = new System.Drawing.Point(467, 84);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(101, 59);
+            this.layoutControlItem4.Size = new System.Drawing.Size(105, 77);
             this.layoutControlItem4.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
@@ -220,7 +220,7 @@ namespace GUI
             this.layoutControlItem5.Control = this.layoutControl1;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 84);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(325, 59);
+            this.layoutControlItem5.Size = new System.Drawing.Size(337, 77);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -267,15 +267,15 @@ namespace GUI
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(596, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(616, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 243);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 261);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(596, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(616, 0);
             // 
             // barDockControlLeft
             // 
@@ -283,15 +283,15 @@ namespace GUI
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 213);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 231);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(596, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(616, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 213);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 231);
             // 
             // FrmDangNhap
             // 
@@ -300,7 +300,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
             this.BackgroundImageStore = global::GUI.Properties.Resources.bgDN;
-            this.ClientSize = new System.Drawing.Size(596, 243);
+            this.ClientSize = new System.Drawing.Size(616, 261);
             this.Controls.Add(this.lcMain);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -311,6 +311,7 @@ namespace GUI
             this.Name = "FrmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDangNhap_FormClosing);
             this.Load += new System.EventHandler(this.FrmDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lcMain)).EndInit();
             this.lcMain.ResumeLayout(false);

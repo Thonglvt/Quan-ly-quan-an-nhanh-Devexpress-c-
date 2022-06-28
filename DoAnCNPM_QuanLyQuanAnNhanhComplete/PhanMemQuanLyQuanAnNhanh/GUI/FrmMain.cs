@@ -47,7 +47,7 @@ namespace GUI
         void skin()
         {
             DevExpress.LookAndFeel.DefaultLookAndFeel themes = new DevExpress.LookAndFeel.DefaultLookAndFeel();
-            themes.LookAndFeel.SkinName = "Office 2016 Colorful";
+            themes.LookAndFeel.SkinName = "Office 2019 Colorful";
         }
 
         void AddOrUpdateChucNangHeThong()
@@ -228,6 +228,18 @@ namespace GUI
         private void btnHoaDonBH_ItemClick(object sender, ItemClickEventArgs e)
         {
             addForm(typeof(FrmHoaDonBanHang));
+        }
+        private void btnNhanVien_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            addForm(typeof(FrmNhanVien));
+        }
+        private void btnCaLV_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            addForm(typeof(FrmCaLamViec));
+        }
+        private void btnChamCong_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            addForm(typeof(FrmChamCong));
         }
         #endregion
 
