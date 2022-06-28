@@ -26,6 +26,16 @@ namespace BLL
             dalHDBD = new DAL_HoaDonBanHang();
             return dalHDBD.getAll2().Where(t=>t.MaHD == pMaHD).ToList();
         }
+        public List<DTO_HoaDon_KH_NV_BG_SP> getHD_KH_NV()
+        {
+            dalHDBD = new DAL_HoaDonBanHang();
+            return dalHDBD.getHD_KH_NV().OrderByDescending(a => a.NgayLap).ToList();
+        }
+        public List<DTO_HoaDon_KH_NV_BG_SP> getHD_KH_NV_ByMaNV(string pMaNV)
+        {
+            dalHDBD = new DAL_HoaDonBanHang();
+            return dalHDBD.getHD_KH_NV().Where(t => t.MaNV == pMaNV).OrderByDescending(a => a.NgayLap).ToList();
+        }
 
         #region CRUD
         public string insert(tblHoaDonBanHang pHDBH)

@@ -43,6 +43,27 @@ namespace DAL
                       };
             return lst.ToList();
         }
+        public List<DTO_HoaDon_KH_NV_BG_SP> getHD_KH_NV()
+        {
+            db = new QL_QuanAnNhanhDataContext();
+            var lst = from a in db.tblHoaDonBanHangs
+                      join b in db.tblKhachHangs on a.MaKH equals b.MaKH
+                      join c in db.tblNhanViens on a.MaNV equals c.MaNV
+                      select new DTO_HoaDon_KH_NV_BG_SP
+                      {
+
+                          MaHD = a.MaHD,
+                          TenKH = b.TenKH,
+                          TenNV = c.TenNV,
+                          MaNV = a.MaNV,
+                          NgayLap = Convert.ToDateTime(a.NgayLap),
+                          PhuThu = Convert.ToInt32(a.PhuThu),
+                          GiamGia = Convert.ToInt32(a.GiamGia),
+                          TongTien = Convert.ToDouble(a.TongTien),
+                          StrTrangThai = (Convert.ToBoolean(a.TrangThai) == true) ? "Đã thanh toán" : "Chưa thanh toán"
+                      };
+            return lst.ToList();
+        }
         public string insert(tblHoaDonBanHang pHDBH)
         {
             try

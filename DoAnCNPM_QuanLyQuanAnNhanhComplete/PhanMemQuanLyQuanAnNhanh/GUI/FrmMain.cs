@@ -207,6 +207,9 @@ namespace GUI
             //        e.Cancel = true;
             //    }
             //}
+            FrmDangNhap frm = new FrmDangNhap();
+            frm.Show();
+            Hide();
         }
 
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
@@ -221,6 +224,10 @@ namespace GUI
         private void btnPhanQuyen_ItemClick(object sender, ItemClickEventArgs e)
         {
             addForm(typeof(FrmPhanQuyen));
+        }
+        private void btnHoaDonBH_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            addForm(typeof(FrmHoaDonBanHang));
         }
         #endregion
 

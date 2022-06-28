@@ -23,14 +23,29 @@ namespace DTO.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MMT-LEVANTHONG\\SQLEXPRESS;Initial Catalog=QL_QuanAnNhanh;Integrated S" +
-            "ecurity=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MMT-LEVANTHONG\\SQLEXPRE;Initial Catalog=QL_QuanAnNhanh;Integrated Sec" +
+            "urity=True")]
         public string QL_QuanAnNhanhConnectionString {
             get {
                 return ((string)(this["QL_QuanAnNhanhConnectionString"]));
+            }
+            set {
+                this["QL_QuanAnNhanhConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MMT-LEVANTHONG\\SQLEXPRESS;Initial Catalog=QL_QuanAnNhanh;Integrated S" +
+            "ecurity=True")]
+        public string QL_QuanAnNhanhConnectionString2 {
+            get {
+                return ((string)(this["QL_QuanAnNhanhConnectionString2"]));
+            }
+            set {
+                this["QL_QuanAnNhanhConnectionString2"] = value;
             }
         }
     }

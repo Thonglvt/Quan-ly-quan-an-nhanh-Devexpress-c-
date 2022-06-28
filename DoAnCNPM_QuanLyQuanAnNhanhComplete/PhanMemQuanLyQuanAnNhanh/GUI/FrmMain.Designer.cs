@@ -49,6 +49,8 @@ namespace GUI
             this.btnNhanVien = new DevExpress.XtraBars.BarButtonItem();
             this.btnCaLV = new DevExpress.XtraBars.BarButtonItem();
             this.btnChamCong = new DevExpress.XtraBars.BarButtonItem();
+            this.lbThongTinNhanVien = new DevExpress.XtraBars.BarStaticItem();
+            this.btnHoaDonBH = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -62,7 +64,6 @@ namespace GUI
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.lbThongTinNhanVien = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
@@ -91,9 +92,10 @@ namespace GUI
             this.btnNhanVien,
             this.btnCaLV,
             this.btnChamCong,
-            this.lbThongTinNhanVien});
+            this.lbThongTinNhanVien,
+            this.btnHoaDonBH});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 20;
+            this.ribbon.MaxItemId = 21;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -270,6 +272,23 @@ namespace GUI
             this.btnChamCong.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
+            // lbThongTinNhanVien
+            // 
+            this.lbThongTinNhanVien.Caption = "( 30102021NV000000 - Lê Văn Thông )";
+            this.lbThongTinNhanVien.Id = 19;
+            this.lbThongTinNhanVien.Name = "lbThongTinNhanVien";
+            // 
+            // btnHoaDonBH
+            // 
+            this.btnHoaDonBH.Caption = "Hóa đơn bán hàng";
+            this.btnHoaDonBH.Id = 20;
+            this.btnHoaDonBH.ImageOptions.Image = global::GUI.Properties.Resources.colorlegend_16x16;
+            this.btnHoaDonBH.ImageOptions.LargeImage = global::GUI.Properties.Resources.colorlegend_32x32;
+            this.btnHoaDonBH.Name = "btnHoaDonBH";
+            this.btnHoaDonBH.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnHoaDonBH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHoaDonBH_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -304,6 +323,7 @@ namespace GUI
             this.ribbonPageGroup2.ItemLinks.Add(this.btnMonAn, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnBangGia, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnKhuyenMai, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnHoaDonBH, true);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Danh mục";
             // 
@@ -359,12 +379,6 @@ namespace GUI
             this.documentManager1.View = this.tabbedView1;
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
-            // 
-            // lbThongTinNhanVien
-            // 
-            this.lbThongTinNhanVien.Caption = "( 30102021NV000000 - Lê Văn Thông )";
-            this.lbThongTinNhanVien.Id = 19;
-            this.lbThongTinNhanVien.Name = "lbThongTinNhanVien";
             // 
             // FrmMain
             // 
@@ -425,5 +439,6 @@ namespace GUI
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarStaticItem lbThongTinNhanVien;
+        private DevExpress.XtraBars.BarButtonItem btnHoaDonBH;
     }
 }

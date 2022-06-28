@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO_BangGia_SanPham.cs" />
+    <Compile Include="DTO_CauHinh.cs" />
     <Compile Include="DTO_HoaDon_KH_NV_BG_SP.cs" />
     <Compile Include="DTO_SessionLogin.cs" />
     <Compile Include="DTO_TaiKhoan_NV.cs" />

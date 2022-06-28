@@ -89,7 +89,7 @@ namespace GUI
             this.splitContainerControl.Panel2.Controls.Add(this.groupControlRights);
             this.splitContainerControl.Panel2.Text = "Panel2";
             this.splitContainerControl.Size = new System.Drawing.Size(1203, 558);
-            this.splitContainerControl.SplitterPosition = 726;
+            this.splitContainerControl.SplitterPosition = 840;
             this.splitContainerControl.TabIndex = 0;
             // 
             // tablePanel1
@@ -104,7 +104,7 @@ namespace GUI
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 224.4F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(726, 553);
+            this.tablePanel1.Size = new System.Drawing.Size(840, 553);
             this.tablePanel1.TabIndex = 2;
             // 
             // groupControlUserOfNhomND
@@ -116,7 +116,7 @@ namespace GUI
             this.groupControlUserOfNhomND.Location = new System.Drawing.Point(3, 227);
             this.groupControlUserOfNhomND.Name = "groupControlUserOfNhomND";
             this.tablePanel1.SetRow(this.groupControlUserOfNhomND, 1);
-            this.groupControlUserOfNhomND.Size = new System.Drawing.Size(720, 323);
+            this.groupControlUserOfNhomND.Size = new System.Drawing.Size(834, 323);
             this.groupControlUserOfNhomND.TabIndex = 2;
             this.groupControlUserOfNhomND.Text = "Người dùng thuộc nhóm người dùng";
             // 
@@ -127,7 +127,7 @@ namespace GUI
             this.gridControlUserOfNhomQuyen.MainView = this.gridView1;
             this.gridControlUserOfNhomQuyen.MenuManager = this.barManager1;
             this.gridControlUserOfNhomQuyen.Name = "gridControlUserOfNhomQuyen";
-            this.gridControlUserOfNhomQuyen.Size = new System.Drawing.Size(716, 293);
+            this.gridControlUserOfNhomQuyen.Size = new System.Drawing.Size(830, 293);
             this.gridControlUserOfNhomQuyen.TabIndex = 0;
             this.gridControlUserOfNhomQuyen.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -276,7 +276,7 @@ namespace GUI
             this.groupControlNhomND.Name = "groupControlNhomND";
             this.groupControlNhomND.Padding = new System.Windows.Forms.Padding(5);
             this.tablePanel1.SetRow(this.groupControlNhomND, 0);
-            this.groupControlNhomND.Size = new System.Drawing.Size(720, 218);
+            this.groupControlNhomND.Size = new System.Drawing.Size(834, 218);
             this.groupControlNhomND.TabIndex = 1;
             this.groupControlNhomND.Text = "Nhóm người dùng";
             // 
@@ -286,7 +286,7 @@ namespace GUI
             this.gridControlNhomQuyen.Location = new System.Drawing.Point(7, 33);
             this.gridControlNhomQuyen.MainView = this.gridViewNhomND;
             this.gridControlNhomQuyen.Name = "gridControlNhomQuyen";
-            this.gridControlNhomQuyen.Size = new System.Drawing.Size(706, 178);
+            this.gridControlNhomQuyen.Size = new System.Drawing.Size(820, 178);
             this.gridControlNhomQuyen.TabIndex = 0;
             this.gridControlNhomQuyen.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNhomND});
@@ -371,7 +371,7 @@ namespace GUI
             this.groupControlRights.Location = new System.Drawing.Point(0, 0);
             this.groupControlRights.Name = "groupControlRights";
             this.groupControlRights.Padding = new System.Windows.Forms.Padding(5);
-            this.groupControlRights.Size = new System.Drawing.Size(465, 553);
+            this.groupControlRights.Size = new System.Drawing.Size(351, 553);
             this.groupControlRights.TabIndex = 1;
             this.groupControlRights.Text = "Quyền của nhóm người dùng";
             // 
@@ -392,7 +392,7 @@ namespace GUI
             this.treeList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
             this.treeList.RowHeight = 30;
-            this.treeList.Size = new System.Drawing.Size(451, 513);
+            this.treeList.Size = new System.Drawing.Size(337, 513);
             this.treeList.TabIndex = 0;
             this.treeList.ShownEditor += new System.EventHandler(this.treeList_ShownEditor);
             // 

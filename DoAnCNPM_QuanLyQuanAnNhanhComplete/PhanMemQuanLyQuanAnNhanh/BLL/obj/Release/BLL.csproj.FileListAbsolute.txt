@@ -1,0 +1,12 @@
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\BLL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\BLL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\DAL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\DTO.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\DAL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\DTO.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\bin\Release\DTO.dll.config
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Release\BLL.csproj.CopyComplete
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Release\BLL.dll
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Release\BLL.pdb
+E:\CNPM\DoAn\Quan-ly-quan-an-nhanh-Devexpress-c-\DoAnCNPM_QuanLyQuanAnNhanhComplete\PhanMemQuanLyQuanAnNhanh\BLL\obj\Release\BLL.csproj.AssemblyReference.cache

@@ -69,21 +69,30 @@ namespace GUI
         }
         private void BtnLuu_GC_Click(object sender, EventArgs e)
         {
+            DateTime ngayKT = Convert.ToDateTime(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["NgayKetThuc"]));
             if (XtraMessageBox.Show("Xác nhận cập nhật?",
                 "Thông báo [Message]", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (Convert.ToDateTime(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["NgayKetThuc"]))
-                    < Convert.ToDateTime(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["NgayBatDau"])))
-                {
-                    XtraMessageBox.Show("Ngày không hợp lệ (lưu ý: Ngày bắt đầu < ngày kết thúc khuyến mãi)", "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //if (ngayKT< Convert.ToDateTime(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["NgayBatDau"])))
+                //{
+                //    XtraMessageBox.Show("Ngày không hợp lệ (lưu ý: Ngày bắt đầu < ngày kết thúc khuyến mãi)", "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                    return;
-                }
-                if (Convert.ToDateTime(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["NgayKetThuc"])) < DateTime.Now)
-                {
-                    XtraMessageBox.Show("Vui lòng chọn ngày kết thúc lớn hơn ngày " + DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                //    return;
+                //}
+                //if (ngayKT < DateTime.Now)
+                //{
+                //    XtraMessageBox.Show("Vui lòng chọn ngày kết thúc lớn hơn ngày " + DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    return;
+                //}
+                //bllKM = new BLL_KhuyenMai();
+                //var check = bllKM.getAll().FirstOrDefault(t => t.NgayBatDau < ngayKT && t.NgayKetThuc > ngayKT);
+                //if (check!=null)
+                //{
+                //    XtraMessageBox.Show("Thời gian này đang có chương trình khuyến mãi", "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    loadData();
+                //    return;
+                //}
+
                 if (Convert.ToInt32(gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["GiamGia"])) <= 0 || gvKM.GetRowCellValue(gvKM.FocusedRowHandle, gvKM.Columns["GiamGia"]).ToString() == string.Empty)
                 {
                     XtraMessageBox.Show(lbGG.Text + " phải lớn hơn 0", "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -135,7 +144,7 @@ namespace GUI
                 deNgayBD.Focus();
                 return;
             }
-            if (Convert.ToDateTime(deNgayBD.EditValue)<DateTime.Now)
+            if (string.Compare(Convert.ToDateTime(deNgayBD.EditValue).ToShortDateString(),DateTime.Now.ToShortDateString(),false)<0)
             {
                 XtraMessageBox.Show("Vui lòng chọn ngày bắt đầu lớn hơn ngày "+ DateTime.Now.ToShortDateString(), "Thông báo [Message]", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 deNgayBD.Focus();
