@@ -612,6 +612,7 @@ namespace GUI
             this.lbCLV.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F);
             this.lbCLV.AppearanceItemCaption.Options.UseFont = true;
             this.lbCLV.Control = this.sleCaLV;
+            this.lbCLV.Enabled = false;
             this.lbCLV.Location = new System.Drawing.Point(0, 0);
             this.lbCLV.Name = "lbCLV";
             this.lbCLV.Size = new System.Drawing.Size(659, 32);

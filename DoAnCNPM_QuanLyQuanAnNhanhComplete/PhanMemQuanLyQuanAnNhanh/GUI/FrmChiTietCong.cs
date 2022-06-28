@@ -66,9 +66,6 @@ namespace GUI
 			sleThang.EditValue = FrmChiTietCong.Thang;
 			sleNam.EditValue = FrmChiTietCong.Nam;
 
-			//lbThang.Enabled = false;
-			//lbNam.Enabled = false;
-			lbCLV.Enabled = false;
 
 			//
 			gvCTCC_View.CellValueChanging += GvCTCC_View_CellValueChanging;
@@ -140,7 +137,11 @@ namespace GUI
 			sleCaLV.Properties.DisplayMember = "TenCa";
 			sleCaLV.Properties.ValueMember = "MaCa";
 		}
-
+		void loadDataTheoCa(string thang,string nam,string maCa)
+        {
+			gcCTCC.DataSource = bllCTCC.GetChiTietChCongByMaChamCongThangNamMaCa(thang + nam, Convert.ToInt32(thang), Convert.ToInt32(nam), maCa);
+			CustomView(Convert.ToInt32(thang), Convert.ToInt32(nam));
+		}
 		private void CustomView(int thang, int nam)
 		{
 			gvCTCC_View.RestoreLayoutFromXml(Application.StartupPath + @"\BangCong_Layout.xml");
@@ -353,16 +354,18 @@ namespace GUI
 			{
 				if (thang != null && nam != null)
 				{
-					gcCTCC.DataSource = bllCTCC.GetChiTietChCongByMaChamCongThangNamMaCa(thang.ToString() + nam.ToString(), Convert.ToInt32(thang), Convert.ToInt32(nam), maCa.ToString());
-					CustomView(Convert.ToInt32(thang), Convert.ToInt32(nam));
+					loadDataTheoCa(thang.ToString(), nam.ToString(), maCa.ToString());
+					//gcCTCC.DataSource = bllCTCC.GetChiTietChCongByMaChamCongThangNamMaCa(thang.ToString() + nam.ToString(), Convert.ToInt32(thang), Convert.ToInt32(nam), maCa.ToString());
+					//CustomView(Convert.ToInt32(thang), Convert.ToInt32(nam));
 				}
 			}
 			else
 			{
 				if (thang != null && nam != null && maCa != null)
 				{
-					gcCTCC.DataSource = bllCTCC.GetChiTietChCongByMaChamCongThangNamMaCa(thang.ToString() + nam.ToString(), Convert.ToInt32(thang), Convert.ToInt32(nam), maCa.ToString());
-					CustomView(Convert.ToInt32(thang), Convert.ToInt32(nam));
+					loadDataTheoCa(thang.ToString(), nam.ToString(), maCa.ToString());
+					//gcCTCC.DataSource = bllCTCC.GetChiTietChCongByMaChamCongThangNamMaCa(thang.ToString() + nam.ToString(), Convert.ToInt32(thang), Convert.ToInt32(nam), maCa.ToString());
+					//CustomView(Convert.ToInt32(thang), Convert.ToInt32(nam));
 				}
 			}
 		}
@@ -489,7 +492,16 @@ namespace GUI
 				   , "", Properties.Resources.success2___Copy, new Message());
 			XtraMessageBox.Show("Cập nhật thành công", "Thông báo [Message]"
 				  , MessageBoxButtons.OK, MessageBoxIcon.None);
-			loadData();
+			if (lbCLV.Enabled == false)
+				loadData();
+			else
+			{
+				var thang = sleThang.EditValue;
+				var nam = sleNam.EditValue;
+				var maCa = sleCaLV.EditValue;
+				loadDataTheoCa(thang.ToString(), nam.ToString(), maCa.ToString());
+			}
+
 		}
 
 		private void btnToday_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

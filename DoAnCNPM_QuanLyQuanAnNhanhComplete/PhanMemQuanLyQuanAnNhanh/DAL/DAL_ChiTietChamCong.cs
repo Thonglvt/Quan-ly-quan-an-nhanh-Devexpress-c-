@@ -114,7 +114,7 @@ namespace DAL
 			//Cập nhật tổng ngày công
 			List<DTO_ChiTietChamCong> lstDTO = lst.ToList<DTO_ChiTietChamCong>();
 			capNhatTongNgayCong(ref lstDTO);
-			return lst.ToList<DTO_ChiTietChamCong>();
+			return lstDTO;
 		}
 		public List<DTO_ChiTietChamCong> GetChiTietChCongByMaChamCongThangNamMaCa(string pMaChCong, int pThang, int pNam,string pMaCa)
 		{
@@ -168,7 +168,7 @@ namespace DAL
 			//Cập nhật tổng ngày công
 			List<DTO_ChiTietChamCong> lstDTO = lst.ToList<DTO_ChiTietChamCong>();
 			capNhatTongNgayCong(ref lstDTO);
-			return lst.ToList<DTO_ChiTietChamCong>();
+			return lstDTO;
 		}
 
 
